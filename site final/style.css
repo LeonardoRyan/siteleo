@@ -1,0 +1,224 @@
+@font-face {
+  font-family: titulosapp;
+  src: url(/fontes/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: paragrafosapp;
+  src: url(/fontes/Poppins/Poppins-ExtraLightItalic.ttf);
+}
+
+
+body{
+    background-color:rgb(11, 0, 22) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.blocos{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+  height: 96vh;
+    width: 100%;
+}
+.wind_inicial{
+    color: #FFF;
+text-align: center;
+text-shadow: 2px 10px 10px rgba(138, 119, 255, 0.38);
+font-family: Inter;
+font-size: 9.5vh;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+
+
+}
+/* .palavra{
+    color: #664EFD;
+font-family: titulosapp;
+font-size: 80px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+} */
+
+.wind_text{
+   
+    color: #FFF;
+text-align: center;
+font-family: paragrafosapp;
+font-size: 4vh;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+button {
+  font-family: titulosapp;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -200px 0 0 #725AC1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+
+
+
+  .bloco2{
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgb(5,0,36);
+    background: radial-gradient(circle, rgba(5,0,36,1) 37%, rgba(58,9,121,1) 74%, rgba(94,0,255,0.5998774509803921) 99%);
+  }
+  .tela{
+    width: 80%;
+    height: 62vh;
+    background-color: #ffffff00;
+    border-radius: 25px;
+    -webkit-box-shadow: 20px 66px 79px 48px rgba(93, 0, 255, 0.164);
+-moz-box-shadow: 20px 66px 79px 25px rgb(62, 0, 119);
+box-shadow: 15px 15px 15px 15px rgb(41, 3, 77);
+  }
+
+
+
+  .bloco3{
+    margin-top: 5vh;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+ background: #2200ff00;
+
+ flex-wrap: wrap;
+ 
+  }
+  .images{
+    margin-top: 5vh;
+    width: 35%;
+    height: 35vh;
+    background-color: #FFF;
+    border-radius: 25px;
+    -webkit-box-shadow: -47px 44px 47px -29px rgba(142,28,255,1);
+-moz-box-shadow: -47px 44px 47px -29px rgba(142,28,255,1);
+box-shadow: -47px 44px 47px -29px rgba(142,28,255,1);
+  }
+  .imagesT{
+
+    margin-top: 5vh;
+    width: 50%;
+    height: 35vh;
+    border-radius: 25px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+
+  .tituloinicio, .partitulo{
+    font-family: paragrafosapp;
+    color: #FFF;
+    font-size: 3vh;
+    
+  }
+  .tituloinicio{
+    font-family: titulosapp;
+    background-image: linear-gradient(2deg, rgba(102, 78, 253, 1),rgba(255, 255, 255, 0));
+    background-clip: text;
+    color: transparent;
+    font-size: 4.5vh;
+  }
+  
+  .bloco4{
+    margin-top: 5vh;
+    width: 100%;
+    height: calc(100% + 15vh);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: #2200ff00;
+}
+.descript{
+  font-family: paragrafosapp;
+  color: #ffffff;
+  width: 90%;
+}
+
+.mod{
+  font-size: 2em;
+  font-family: paragrafosapp;
+}
+
+.containes{
+ 
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-around;
+
+}
+.titulo{
+  font-family: titulosapp;
+  color: rgb(255, 255, 255);
+  font-size:2em;
+}
+.valores{
+  font-family: titulosapp;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+}
+.titulo, .valores{
+  text-shadow: 1px 10px 10px rgba(255, 255, 255, 0.308);
+}
+
+.bloco5{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+ 
+}
+#menufinal{
+height: 15em;
+width: 100%;
+background: rgba(5, 2, 24, 0.836);
+}
+.mode{
+  font-family: titulosapp;
+  color: #FFF;
+  font-size: 25px;
+}
+

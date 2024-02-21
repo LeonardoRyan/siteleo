@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesmobi.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+</head>
+<body>
+ <section class="blocos">
+    <h1 class="wind_inicial"
+     data-aos="zoom-in-up"
+    data-aos-delay="100"
+    data-aos-duration="1000"
+    >Crie o site dos
+    seus sonhos.</h1>
+    <p class="wind_text"
+    data-aos="zoom-in-down"
+    data-aos-delay="200"
+    data-aos-duration="1000"
+    > Desenvolvemos websites personalizados para impulsionar o seu negócio. Tenha um site exclusivo e atrativo para vender seus produtos ou serviços.</p>
+    <button> <p class="con">Faça um orçamento </p>
+    </button>
+ </section>
+
+ <section class="bloco2"
+ data-aos="fade-up"
+ data-aos-duration="2000">
+
+     <div class="tela"
+     data-aos="fade-up"
+     data-aos-duration="2000"
+     >
+    <img src="/imgs/dddd.png" alt="imgs" width="100%"
+    height="90%"></div>
+ </section>
+
+ <section class="bloco3">
+    <div class="images"></div>
+
+    <div class="imagesT"
+    data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+  
+    ><h1 class="tituloinicio">Destaque-se da concorrência</h1><p class="partitulo">Com o nosso serviço de desenvolvimento de websites personalizados, você terá um site exclusivo que se destaca da concorrência. Isso ajudará a atrair mais clientes e aumentar suas vendas.</p ></div>
+        
+    <div class="imagesT"
+    data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+  
+    ><h1 class="tituloinicio">Aumente sua
+        visibilidade online</h1><p class="partitulo">  Ter um site profissional e bem projetado é essencial para aumentar sua visibilidade online. Com o nosso serviço, você terá um site que transmite profissionalismo e confiança aos seus clientes.</p></div>
+    <div class="images"
+    
+    ></div>
+    <div class="images"></div>
+    
+    <div class="imagesT"
+    data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    ><h1 class="tituloinicio">Venda seus produtos ou serviços de forma eficiente</h1><p class="partitulo">    Nosso serviço de desenvolvimento de websites é focado em criar uma experiência de compra eficiente para os seus clientes. Isso inclui recursos como carrinho de compras, pagamento online e integração com sistemas de gestão.</p></div>
+</section>
+
+<section class="bloco4">
+  <div class="descript">
+    <h1 class="mod"
+    data-aos="zoom-in-right"
+    data-aos-duration="1300"
+    >
+    Na LineMod, nos destacamos por ser especialistas em moldar uma presença digital distintiva para impulsionar o sucesso do seu negócio. Ao escolher nossos serviços de design e desenvolvimento de sites, você não apenas obtém uma plataforma online, mas uma representação digital estratégica e única. Aqui estão nossos diferenciais e o valor que trazemos através dos nossos contratos
+  
+  </h1>
+
+   
+  </div>
+
+      <div class="containes" >
+
+        <div class="vs1" data-aos="zoom-in-down" data-aos-duration="1300">
+          <h1 class="titulo">Visitantes</h1>
+          <h1 class="valores" id="valores1">0</h1>
+      </div>
+      <div class="vs1" data-aos="zoom-in-down" data-aos-duration="1300">
+          <h1 class="titulo">Projetos</h1>
+          <h1 class="valores" id="valores2">0</h1>
+      </div>
+      <div class="vs1" data-aos="zoom-in-down" data-aos-duration="1300">
+          <h1 class="titulo">Assinantes</h1>
+          <h1 class="valores" id="valores3">0</h1>
+      </div>
+
+
+
+   
+      </div>
+
+      <div class="descript"
+      data-aos="zoom-in-right"
+      data-aos-duration="900"
+      >
+       <h1 class="mod">  “O serviço de desenvolvimento de websites  é simplesmente incrível. Eles entenderam exatamente o que eu precisava e entregaram um site perfeito para o meu negócio.” - Tom Martin</h1>   
+  
+       
+      </div>
+      <button> <p class="con">Faça um orçamento </p>
+      </button>
+      <section class="bloco5">
+      
+        <div id="menufinal"> 
+           <h1 class="mode">Contatos</h1>
+        <a href="#"><img src="/imgs/icons/icons8-whatsapp-144.png" alt="whats" width="55"></a>
+        <a href="#">  <img src="/imgs/icons/icons8-instagram-144.png" alt="ins"
+          width="55"></a>
+        </div>
+      </section>
+</section>
+    
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  // Função para animar o valor gradualmente
+function animateValue(id, start, end, duration) {
+    var range = end - start;
+    var current = start;
+    var increment = end > start ? 1 : -1;
+    var stepTime = Math.abs(Math.floor(duration / range));
+    var obj = document.getElementById(id);
+    var timer = setInterval(function() {
+        current += increment;
+        obj.innerHTML = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
+
+// Função para verificar se o elemento está visível na tela
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Função para animar os valores quando os elementos estão visíveis
+function animateValuesWhenVisible() {
+    var valoresElements = document.querySelectorAll('.valores');
+    valoresElements.forEach(function(valoresElement) {
+        if (isElementInViewport(valoresElement)) {
+            var id = valoresElement.getAttribute('id');
+            animateValue(id, 0, 1000, 3000); // animar de 0 a 1000 em 3 segundos
+        }
+    });
+}
+
+// Verificar se os elementos estão visíveis ao carregar a página
+animateValuesWhenVisible();
+
+// Verificar se os elementos estão visíveis ao rolar a página
+window.addEventListener('scroll', function() {
+    animateValuesWhenVisible();
+});
+
+
+</script>
+</html>
